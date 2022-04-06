@@ -10,10 +10,16 @@
   <p>
     F5 rank (F)
   </p>
-  <div 
-       class="boxed">
-  Start
-</div>
+  <span>
+    <input type="submit" id="Connect"  style="margin-left: 195px; width: 150px;" class="btn  action-but" />
+    <div class="form-group">
+        @Html.LabelFor(model => model.Service, new { @class = "col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Service, new { @style = "width: 700px;" })
+            @Html.ValidationMessageFor(model => model.Service)
+        </div>
+    </div>
+</span>
 </body>
 
 </html>
